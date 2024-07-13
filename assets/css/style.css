@@ -1,6 +1,6 @@
 * {
-   --mainText: rgb(18, 18, 18);
-    --border: rgb(70, 70, 70);
+    --mainText: rgb(18, 18, 18);
+    --border: rgb(90, 90, 90);
 }
 
 html {
@@ -11,7 +11,7 @@ body {
     min-height: 100%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(245, 245, 245);
 }
 
 header {
@@ -76,6 +76,11 @@ main {
     padding: 2px;
 }
 
+#search-history {
+    width: 100%;
+    margin-top: 10px;
+}
+
 #results-container {
     display: flex;
     flex-direction: column;
@@ -85,18 +90,23 @@ main {
 }
 
 #today-weather {
+    background-color: white; 
     border: solid var(--border);
     border-radius: 5px;
     height: 150px;
     margin-bottom: 10px; 
+    padding: 5px;
 }
 
-#five-day h3 {
+#results-container h3 {
     color: var(--mainText);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 #forecast-container {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
